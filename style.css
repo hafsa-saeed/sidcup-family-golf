@@ -419,3 +419,737 @@ opacity: 1;
   line-height: 20px;
   margin-bottom: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   Desktop + Laptop + Tablet + Mobile
+   Existing animations are NOT changed
+   ========================================================= */
+
+/* ---------- Large Laptop / Desktop ---------- */
+
+@media (max-width: 1200px) {
+
+  #nav {
+    padding: 0 70px;
+    gap: 30px;
+  }
+
+  #nav img {
+    height: 65px;
+  }
+
+  #page1 h1 {
+    font-size: 110px;
+  }
+
+  #page1 p {
+    width: 55%;
+  }
+
+  #scroller h4 {
+    font-size: 90px;
+  }
+
+  #about-us {
+    padding: 0 35px;
+    gap: 30px;
+  }
+
+  #about-us-in {
+    width: 55%;
+  }
+
+  #about-us img {
+    height: 170px;
+    width: 170px;
+  }
+
+  #cards-container {
+    gap: 35px;
+  }
+
+  .card {
+    width: 28%;
+  }
+
+  #page4 {
+    gap: 35px;
+  }
+
+  #elem {
+    width: 29%;
+  }
+
+  #page4 h1 {
+    font-size: 75px;
+  }
+
+  #footer {
+    padding: 0 60px;
+    gap: 5vw;
+  }
+}
+
+
+/* ---------- Tablet Landscape ---------- */
+
+@media (max-width: 992px) {
+
+  #nav {
+    height: 110px;
+    padding: 0 35px;
+    gap: 25px;
+  }
+
+  #nav img {
+    height: 58px;
+  }
+
+  #nav h4 {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  #page1 h1 {
+    font-size: 85px;
+  }
+
+  #page1 h2 {
+    font-size: 25px;
+  }
+
+  #page1 p {
+    width: 65%;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  #page1 #arrow {
+    height: 170px;
+    width: 170px;
+  }
+
+  #page1 #arrow i {
+    font-size: 38px;
+  }
+
+  #scroller h4 {
+    font-size: 75px;
+  }
+
+  #about-us {
+    height: auto;
+    min-height: 45vh;
+    padding: 70px 30px;
+    gap: 25px;
+  }
+
+  #about-us img {
+    height: 145px;
+    width: 145px;
+  }
+
+  #about-us-in {
+    width: 55%;
+  }
+
+  #about-us-in h3 {
+    font-size: 42px;
+    margin-bottom: 25px;
+  }
+
+  #about-us-in p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  #cards-container {
+    height: auto;
+    min-height: 55vh;
+    gap: 25px;
+    padding: 50px 25px;
+  }
+
+  .card {
+    width: 31%;
+    height: 330px;
+  }
+
+  .overlay {
+    padding: 25px;
+    padding-top: 70px;
+  }
+
+  .overlay h4 {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .overlay p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  #green-div {
+    height: 25vh;
+  }
+
+  #green-div h4 {
+    width: 55%;
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  #green-div img {
+    width: 18%;
+  }
+
+  #page3 {
+    min-height: 70vh;
+    height: auto;
+    padding: 100px 30px;
+  }
+
+  #page3 > p {
+    width: 70%;
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  #page3 #colon1 {
+    left: 8%;
+    top: 20%;
+  }
+
+  #page3 #colon2 {
+    right: 8%;
+    bottom: 20%;
+  }
+
+  #page4 {
+    height: auto;
+    min-height: 55vh;
+    gap: 25px;
+    padding: 100px 25px 50px;
+  }
+
+  #page4 h1 {
+    font-size: 60px;
+    top: 2%;
+    text-align: center;
+  }
+
+  #elem {
+    width: 31%;
+    height: 280px;
+  }
+
+  #elem h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #footer {
+    height: auto;
+    min-height: 35vh;
+    padding: 60px 40px;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 17px;
+  }
+
+  #f4 h4 {
+    font-size: 12px;
+  }
+}
+
+
+/* ---------- Tablet Portrait / Large Mobile ---------- */
+
+@media (max-width: 768px) {
+
+  /* Navigation */
+  #nav {
+    height: 85px;
+    padding: 0 20px;
+    gap: 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+
+  #nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  #nav img {
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  #nav h4 {
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+
+  /* Cursor effects are for mouse devices */
+  #cursor,
+  #cursor-blur {
+    display: none;
+  }
+
+  /* Hero */
+  #page1 {
+    min-height: 100vh;
+    height: auto;
+    padding: 120px 25px 100px;
+  }
+
+  #page1 h1 {
+    font-size: clamp(50px, 10vw, 75px);
+    line-height: 1;
+  }
+
+  #page1 h1::before {
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 1.5px #95c11e;
+  }
+
+  #page1 h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  #page1 p {
+    width: 90%;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  #page1 #arrow {
+    height: 120px;
+    width: 120px;
+    left: -25px;
+    bottom: -25px;
+  }
+
+  #page1 #arrow i {
+    font-size: 30px;
+  }
+
+  /* Scroller */
+  #scroller h4 {
+    font-size: 55px;
+    -webkit-text-stroke: 1.5px #95c11e;
+  }
+
+  /* About */
+  #about-us {
+    min-height: auto;
+    padding: 70px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+
+  #about-us img {
+    height: 180px;
+    width: 180px;
+  }
+
+  #about-us-in {
+    width: 100%;
+    order: 2;
+  }
+
+  #about-us img:first-child {
+    order: 1;
+  }
+
+  #about-us img:last-child {
+    order: 3;
+  }
+
+  #about-us-in h3 {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+
+  #about-us-in p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  /* Cards */
+  #cards-container {
+    height: auto;
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px 30px 60px;
+  }
+
+  .card {
+    width: 100%;
+    height: 330px;
+  }
+
+  .overlay {
+    padding: 25px;
+    padding-top: 70px;
+  }
+
+  .overlay h4 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  /* Green section */
+  #green-div {
+    height: auto;
+    min-height: 220px;
+    padding: 30px 0;
+  }
+
+  #green-div h4 {
+    width: 65%;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  #green-div img {
+    width: 17%;
+  }
+
+  /* Testimonial */
+  #page3 {
+    min-height: 600px;
+    padding: 110px 30px;
+  }
+
+  #page3 > p {
+    width: 80%;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  #page3 img {
+    height: 45px;
+  }
+
+  #page3 #colon1 {
+    left: 6%;
+    top: 15%;
+  }
+
+  #page3 #colon2 {
+    right: 6%;
+    bottom: 15%;
+  }
+
+  /* Page 4 */
+  #page4 {
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 110px 30px 60px;
+  }
+
+  #page4 h1 {
+    position: absolute;
+    width: 90%;
+    top: 30px;
+    font-size: clamp(38px, 8vw, 55px);
+    line-height: 1;
+  }
+
+  #elem {
+    width: 100%;
+    height: 280px;
+  }
+
+  #elem h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Footer */
+  #footer {
+    min-height: auto;
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+
+  #footer > img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #f1 img {
+    height: 75px;
+  }
+
+  #f2,
+  #f3,
+  #f4 {
+    width: 100%;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 15px;
+    white-space: normal;
+    line-height: 22px;
+  }
+
+  #f4 h4 {
+    font-size: 11px;
+    line-height: 17px;
+    white-space: normal;
+  }
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px) {
+
+  #nav {
+    height: 75px;
+    padding: 0 15px;
+    gap: 18px;
+  }
+
+  #nav img {
+    height: 43px;
+  }
+
+  #nav h4 {
+    font-size: 10px;
+  }
+
+  #page1 {
+    padding: 105px 18px 80px;
+  }
+
+  #page1 h1 {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  #page1 h2 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  #page1 p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  #page1 #arrow {
+    height: 90px;
+    width: 90px;
+    left: -25px;
+    bottom: -20px;
+  }
+
+  #page1 #arrow i {
+    font-size: 23px;
+  }
+
+  #scroller h4 {
+    font-size: 42px;
+    margin-right: 7px;
+  }
+
+  #about-us {
+    padding: 55px 18px;
+  }
+
+  #about-us img {
+    height: 150px;
+    width: 150px;
+  }
+
+  #about-us-in h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  #about-us-in p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  #cards-container {
+    padding: 30px 18px 50px;
+  }
+
+  .card {
+    height: 300px;
+  }
+
+  .overlay {
+    padding: 20px;
+    padding-top: 55px;
+  }
+
+  .overlay h4 {
+    font-size: 19px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  #green-div {
+    min-height: 190px;
+  }
+
+  #green-div h4 {
+    width: 70%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #page3 {
+    min-height: 520px;
+    padding: 90px 20px;
+  }
+
+  #page3 > p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #page3 img {
+    height: 35px;
+  }
+
+  #page4 {
+    padding: 100px 18px 50px;
+  }
+
+  #page4 h1 {
+    font-size: 35px;
+    top: 25px;
+  }
+
+  #elem {
+    height: 250px;
+  }
+
+  #elem h2 {
+    font-size: 25px;
+  }
+
+  #footer {
+    padding: 50px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 18px;
+  }
+
+  #f1 img {
+    height: 60px;
+  }
+
+  #f2 h3,
+  #f3 h3 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  #f4 {
+    grid-column: 1 / -1;
+  }
+
+  #f4 h4 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+
+/* ---------- Very Small Phones ---------- */
+
+@media (max-width: 360px) {
+
+  #nav {
+    gap: 15px;
+  }
+
+  #nav img {
+    height: 38px;
+  }
+
+  #nav h4 {
+    font-size: 9px;
+  }
+
+  #page1 h1 {
+    font-size: 39px;
+  }
+
+  #page1 h2 {
+    font-size: 17px;
+  }
+
+  #page1 p {
+    font-size: 14px;
+  }
+
+  #scroller h4 {
+    font-size: 36px;
+  }
+
+  #about-us img {
+    height: 130px;
+    width: 130px;
+  }
+
+  #about-us-in h3 {
+    font-size: 28px;
+  }
+
+  #elem {
+    height: 220px;
+  }
+
+  #page4 h1 {
+    font-size: 30px;
+  }
+}
+
+
